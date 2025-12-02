@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <div class="mt-4 text-lg font-semibold">
+    <div class="mt-16 text-lg font-semibold">
         Result: {{ $result }}
     </div>
 

@@ -1,3 +1,3 @@
-<x-layout>
+<x-layouts.app>
     <livewire:converters.length-converter />
-</x-layout>
+</x-layouts.app>

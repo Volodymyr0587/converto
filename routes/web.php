@@ -1,10 +1,13 @@
 <?php
 
+use App\Livewire\Home;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Converters\LengthConverter;
 
-Route::view('/', 'welcome'); // main page
+Route::get('/', Home::class)->name('home');
 
-// specific converters:
-Route::view('/converter/length', 'converter.length');
-Route::view('/converter/mass', 'converter.mass');
-Route::view('/converter/temperature', 'converter.temperature');
+// Конвертери
+Route::prefix('converters')->name('converters.')->group(function () {
+    Route::get('/length', LengthConverter::class)->name('length');
+    // Route::get('/weight', WeightConverter::class)->name('weight');
+});

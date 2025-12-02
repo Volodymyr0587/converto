@@ -29,6 +29,11 @@ class LengthConverter extends Component
         $this->convert();
     }
 
+    public function mount()
+    {
+        $this->convert();
+    }
+
     public function convert()
     {
         if (!isset($this->units[$this->from]) || !isset($this->units[$this->to])) {
