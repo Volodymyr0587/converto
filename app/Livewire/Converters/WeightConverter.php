@@ -5,24 +5,24 @@ namespace App\Livewire\Converters;
 use Livewire\Component;
 use Illuminate\Support\Number;
 
-class LengthConverter extends Component
+class WeightConverter extends Component
 {
     public $value = 1;
-    public $from = 'meter';
-    public $to = 'kilometer';
+    public $from = 'gram';
+    public $to = 'kilogram';
     public $result = 0;
 
     public array $units = [
-        'kilometer' => 1000,
-        'meter' => 1,
-        'centimeter' => 0.01,
-        'millimeter' => 0.001,
-        'micrometer' => 1e-6,
-        'nanometer' => 1e-9,
-        'mile' => 1609.344,
-        'yard' => 0.9144,
-        'foot' => 0.3048,
-        'inch' => 0.0254,
+        'kilogram' => 1000,
+        'gram' => 1,
+        'milligram' => 0.001,
+        'metric ton' => 1000000,
+        'long ton' => 1016046.08,
+        'short ton' => 907184,
+        'pound' => 453.592,
+        'ounce' => 28.3495,
+        'carat' => 0.2,
+        'atomic mass unit' => 1.660540199E-24
     ];
 
     public function updated($field)
@@ -42,15 +42,15 @@ class LengthConverter extends Component
             return;
         }
 
-        $meters = $this->value * $this->units[$this->from];
+        $grams = $this->value * $this->units[$this->from];
 
-        $raw = $meters / $this->units[$this->to];
+        $raw = $grams / $this->units[$this->to];
 
         $this->result = Number::format($raw, maxPrecision: 10);
     }
 
     public function render()
     {
-        return view('livewire.converters.length-converter');
+        return view('livewire.converters.weight-converter');
     }
 }
