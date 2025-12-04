@@ -9,10 +9,10 @@ use App\Livewire\Converters\WeightConverter;
 
 Route::get('/', Home::class)->name('home');
 
-// Конвертери
+// Converters
 Route::prefix('converters')->name('converters.')->group(function () {
     Route::get('/length', LengthConverter::class)->name('length');
     Route::get('/weight', WeightConverter::class)->name('weight');
     Route::get('/time', TimeConverter::class)->name('time');
-     Route::get('/temperature', TemperatureConverter::class)->name('temperature');
+    Route::get('/temperature', TemperatureConverter::class)->name('temperature');
 });
