@@ -42,7 +42,7 @@
             <p class="text-gray-600">Convert celsius, fahrenheit and kelvin units.</p>
         </a>
 
-        <!-- Плейсхолдер для майбутнього інструменту -->
+        <!-- Placeholder for feature instrument -->
         <div class="p-6 bg-gray-100 rounded-lg border border-dashed border-gray-300 flex items-center justify-center">
             <span class="text-gray-400">Coming soon: Data Storage Converter</span>
         </div>
