@@ -12,8 +12,8 @@
             <p class="text-gray-600">Convert meters, feet, inches and other units.</p>
         </a>
 
-         <!-- Weight converter card -->
-          <a href="{{ route('converters.weight') }}" wire:navigate
+        <!-- Weight converter card -->
+        <a href="{{ route('converters.weight') }}" wire:navigate
             class="block p-6 bg-white rounded-lg shadow hover:shadow-md transition border border-gray-100 group">
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xl font-semibold text-gray-800 group-hover:text-indigo-600">Weight converter</h2>
@@ -22,9 +22,19 @@
             <p class="text-gray-600">Convert kilograms, pounds, ounces and other units.</p>
         </a>
 
+        <!-- Time converter card -->
+        <a href="{{ route('converters.time') }}" wire:navigate
+            class="block p-6 bg-white rounded-lg shadow hover:shadow-md transition border border-gray-100 group">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-xl font-semibold text-gray-800 group-hover:text-indigo-600">Time converter</h2>
+                <x-svg.time />
+            </div>
+            <p class="text-gray-600">Convert seconds, minutes, hours and other units.</p>
+        </a>
+
         <!-- Плейсхолдер для майбутнього інструменту -->
         <div class="p-6 bg-gray-100 rounded-lg border border-dashed border-gray-300 flex items-center justify-center">
-            <span class="text-gray-400">Coming soon: Time converter</span>
+            <span class="text-gray-400">Coming soon: Temperature converter</span>
         </div>
     </div>
 </div>
