@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Converters\TemperatureConverter;
 use App\Livewire\Home;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Converters\TimeConverter;
@@ -13,4 +14,5 @@ Route::prefix('converters')->name('converters.')->group(function () {
     Route::get('/length', LengthConverter::class)->name('length');
     Route::get('/weight', WeightConverter::class)->name('weight');
     Route::get('/time', TimeConverter::class)->name('time');
+     Route::get('/temperature', TemperatureConverter::class)->name('temperature');
 });
