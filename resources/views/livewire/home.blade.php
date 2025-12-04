@@ -7,7 +7,7 @@
             class="block p-6 bg-white rounded-lg shadow hover:shadow-md transition border border-gray-100 group">
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xl font-semibold text-gray-800 group-hover:text-indigo-600">Length converter</h2>
-                <span class="text-2xl">📏</span>
+                <x-svg.length />
             </div>
             <p class="text-gray-600">Convert meters, feet, inches and other units.</p>
         </a>
@@ -17,7 +17,7 @@
             class="block p-6 bg-white rounded-lg shadow hover:shadow-md transition border border-gray-100 group">
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-xl font-semibold text-gray-800 group-hover:text-indigo-600">Weight converter</h2>
-                <span class="text-2xl">⚖️</span>
+                <x-svg.weight />
             </div>
             <p class="text-gray-600">Convert kilograms, pounds, ounces and other units.</p>
         </a>
