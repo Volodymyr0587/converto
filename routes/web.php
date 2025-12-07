@@ -1,11 +1,11 @@
 <?php
 
+use App\Livewire\Converters\LengthConverter;
 use App\Livewire\Converters\TemperatureConverter;
+use App\Livewire\Converters\TimeConverter;
+use App\Livewire\Converters\WeightConverter;
 use App\Livewire\Home;
 use Illuminate\Support\Facades\Route;
-use App\Livewire\Converters\TimeConverter;
-use App\Livewire\Converters\LengthConverter;
-use App\Livewire\Converters\WeightConverter;
 
 Route::get('/', Home::class)->name('home');
 
