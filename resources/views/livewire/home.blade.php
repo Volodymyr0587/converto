@@ -42,6 +42,16 @@
             <p class="text-gray-600">Convert celsius, fahrenheit and kelvin units.</p>
         </a>
 
+        <!-- Data storage converter card -->
+        <a href="{{ route('converters.data-storage') }}" wire:navigate
+            class="block p-6 bg-white rounded-lg shadow hover:shadow-md transition border border-gray-100 group">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-xl font-semibold text-gray-800 group-hover:text-indigo-600">Data storage converter</h2>
+                <x-svg.data-storage />
+            </div>
+            <p class="text-gray-600">Convert bites, kilobytes, megabytes and other units.</p>
+        </a>
+
         <!-- Placeholder for feature instrument -->
         <div class="p-6 bg-gray-100 rounded-lg border border-dashed border-gray-300 flex items-center justify-center">
             <span class="text-gray-400">Coming soon: Data Storage Converter</span>
