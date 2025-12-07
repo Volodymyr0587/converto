@@ -8,6 +8,7 @@ use App\Livewire\Home;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', Home::class)->name('home');
+Route::view('/about', 'about')->name('about');
 
 // Converters
 Route::prefix('converters')->name('converters.')->group(function () {
