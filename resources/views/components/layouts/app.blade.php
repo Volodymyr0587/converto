@@ -67,12 +67,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="text-slate-700 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            <a href="https://github.com/Volodymyr0587/converto" target="_blank" class="text-slate-700 hover:text-slate-500 focus:text-slate-500 text-sm">
                                 Contribute
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="text-slate-700 hover:text-slate-500 focus:text-slate-500 text-sm">
+                            <a href="https://github.com/Volodymyr0587" target="_blank" class="text-slate-700 hover:text-slate-500 focus:text-slate-500 text-sm">
                                 Contact Us
                             </a>
                         </li>
