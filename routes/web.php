@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Converters\ColorConverter;
 use App\Livewire\Home;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Converters\TimeConverter;
@@ -20,4 +21,5 @@ Route::prefix('converters')->name('converters.')->group(function () {
     Route::get('/temperature', TemperatureConverter::class)->name('temperature');
     Route::get('/data-storage', DataStorageConverter::class)->name('data-storage');
     Route::get('/number-system', NumberSystemConverter::class)->name('number-system');
+    Route::get('/color', ColorConverter::class)->name('color');
 });

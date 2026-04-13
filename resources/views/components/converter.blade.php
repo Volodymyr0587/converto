@@ -5,7 +5,9 @@
     'value' => null,
     'from' => null,
     'to' => null,
-    'result' => null
+    'result' => null,
+    'inputType' => 'number',
+    'previewColor' => null,
 ])
 
 <div class="max-w-6xl mx-auto p-6">
@@ -29,7 +31,7 @@
                     </svg>
                     Value
                 </label>
-                <input type="number" step="any" wire:model.live="value"
+                <input :type="$inputType" step="any" wire:model.live="value"
                        class="mt-1 w-full rounded-xl border-gray-300 p-2.5 focus:border-blue-500 focus:ring-blue-500">
             </div>
 
@@ -77,7 +79,7 @@
             <div class="text-sm text-gray-500 mb-1 flex items-center gap-1">
                 <!-- Sparkle Icon -->
                 <svg class="w-4 h-4 text-yellow-500" fill="none" stroke="currentColor" stroke-width="1.5"
-                     viewBox="0 0 24 24">
+                  viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round"
                           d="M12 3v3m6.364-1.364l-2.121 2.121M21 12h-3m1.364 6.364l-2.121-2.121M12 21v-3m-6.364 1.364l2.121-2.121M3 12h3m-1.364-6.364l2.121 2.121" />
                 </svg>
@@ -92,6 +94,12 @@
 
                 {{ $result }}
             </div>
+
+            @if ($previewColor)
+                <div class="mt-4 p-9 rounded-xl border shadow"
+                    style="background-color: {{ $previewColor }}">
+                </div>                 
+            @endif
         </div>
     </div>
 
