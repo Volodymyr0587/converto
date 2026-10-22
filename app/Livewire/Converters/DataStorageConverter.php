@@ -39,7 +39,7 @@ class DataStorageConverter extends Component
     public function convert()
     {
         if (!is_numeric($this->value)) {
-            $this->result = 0;
+            $this->result = "The data storage value must be a number.";
             return;
         }
 

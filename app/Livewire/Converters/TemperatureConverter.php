@@ -39,6 +39,11 @@ class TemperatureConverter extends Component
             return;
         }
 
+        if (!is_numeric($this->value)) {
+            $this->result = "The temperature value must be a number.";
+            return;
+        }
+
         // Step 1 — Convert FROM selected unit TO Celsius
         $celsius = match ($this->from) {
             'celsius' => $this->value,

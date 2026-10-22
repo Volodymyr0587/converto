@@ -44,6 +44,11 @@ class TimeConverter extends Component
             return;
         }
 
+        if (!is_numeric($this->value)) {
+            $this->result = "The time value must be a number.";
+            return;
+        }
+
         $seconds = $this->value * $this->units[$this->from];
 
         $raw = $seconds / $this->units[$this->to];

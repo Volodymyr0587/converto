@@ -42,6 +42,11 @@ class WeightConverter extends Component
             return;
         }
 
+        if (!is_numeric($this->value)) {
+            $this->result = "The weight value must be a number.";
+            return;
+        }
+
         $grams = $this->value * $this->units[$this->from];
 
         $raw = $grams / $this->units[$this->to];

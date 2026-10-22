@@ -42,6 +42,11 @@ class LengthConverter extends Component
             return;
         }
 
+        if (!is_numeric($this->value)) {
+            $this->result = "The length value must be a number.";
+            return;
+        }
+
         $meters = $this->value * $this->units[$this->from];
 
         $raw = $meters / $this->units[$this->to];
